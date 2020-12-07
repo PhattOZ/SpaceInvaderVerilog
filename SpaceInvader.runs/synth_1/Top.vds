@@ -1,0 +1,508 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Dec  7 19:39:05 2020
+# Process ID: 12500
+# Current directory: C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.runs/synth_1/Top.vds
+# Journal file: C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7276
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1035.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Top.v:2]
+INFO: [Synth 8-3876] $readmem data file 'pal24bit.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Top.v:106]
+INFO: [Synth 8-3876] $readmem data file 'plNewnew.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Top.v:112]
+INFO: [Synth 8-3876] $readmem data file 'plGameover5.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'mouse_led' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/mouse_led.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mouse' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/mouse.v:3]
+	Parameter STRM bound to: 8'b11110100 
+	Parameter init1 bound to: 3'b000 
+	Parameter init2 bound to: 3'b001 
+	Parameter init3 bound to: 3'b010 
+	Parameter pack1 bound to: 3'b011 
+	Parameter pack2 bound to: 3'b100 
+	Parameter pack3 bound to: 3'b101 
+	Parameter done bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'ps2_rxtx' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_rxtx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_rx.v:3]
+	Parameter idle bound to: 2'b00 
+	Parameter dps bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_rx.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (1#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ps2_tx' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_tx.v:3]
+	Parameter idle bound to: 3'b000 
+	Parameter rts bound to: 3'b001 
+	Parameter start bound to: 3'b010 
+	Parameter data bound to: 3'b011 
+	Parameter stop bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_tx.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_tx' (2#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rxtx' (3#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/ps2_rxtx.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/mouse.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'mouse' (4#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/mouse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mouse_led' (5#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/mouse/mouse_led.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Seven_segment' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Seven_segment.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Seven_segment' (6#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Seven_segment.v:2]
+INFO: [Synth 8-6157] synthesizing module 'vga640x480' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/vga640x480.v:2]
+	Parameter HACTIVE bound to: 640 - type: integer 
+	Parameter HBACKPORCH bound to: 48 - type: integer 
+	Parameter HFRONTPORCH bound to: 16 - type: integer 
+	Parameter HSYNC bound to: 96 - type: integer 
+	Parameter HSYNCSTART bound to: 656 - type: integer 
+	Parameter HSYNCEND bound to: 751 - type: integer 
+	Parameter LINEEND bound to: 799 - type: integer 
+	Parameter VACTIVE bound to: 480 - type: integer 
+	Parameter VBACKPORCH bound to: 33 - type: integer 
+	Parameter VFRONTPORCH bound to: 10 - type: integer 
+	Parameter VSYNC bound to: 2 - type: integer 
+	Parameter VSYNCSTART bound to: 513 - type: integer 
+	Parameter VSYNCEND bound to: 514 - type: integer 
+	Parameter SCREENEND bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga640x480' (7#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/vga640x480.v:2]
+INFO: [Synth 8-6157] synthesizing module 'BeeSprite' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/BeeSprite.v:3]
+	Parameter BeeWidth bound to: 28 - type: integer 
+	Parameter BeeHeight bound to: 16 - type: integer 
+	Parameter ShipSpeed bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BeeRom' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/BeeRom.v:2]
+INFO: [Synth 8-3876] $readmem data file 'Spaceship.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/BeeRom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'BeeRom' (8#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/BeeRom.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'BeeSprite' (9#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/BeeSprite.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AlienSprites' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/AlienSprites.v:3]
+	Parameter A1Width bound to: 32 - type: integer 
+	Parameter A1Height bound to: 21 - type: integer 
+	Parameter A2Width bound to: 32 - type: integer 
+	Parameter A2Height bound to: 21 - type: integer 
+	Parameter A3Width bound to: 32 - type: integer 
+	Parameter A3Height bound to: 21 - type: integer 
+	Parameter Xspeed bound to: 10 - type: integer 
+	Parameter Yspeed bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Alien1Rom' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien1Rom.v:2]
+INFO: [Synth 8-3876] $readmem data file 'InvaderNew01.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien1Rom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Alien1Rom' (10#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien1Rom.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Alien2Rom' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien2Rom.v:2]
+INFO: [Synth 8-3876] $readmem data file 'InvaderNew02.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien2Rom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Alien2Rom' (11#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien2Rom.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Alien3Rom' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien3Rom.v:3]
+INFO: [Synth 8-3876] $readmem data file 'InvaderNew03.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien3Rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Alien3Rom' (12#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Alien3Rom.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AlienSprites' (13#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/AlienSprites.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bulletSprite' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletSprite.v:26]
+	Parameter bulletSpeed bound to: 10 - type: integer 
+	Parameter BulletWidth bound to: 4 - type: integer 
+	Parameter BulletHeight bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bulletROM' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'Bullet.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletROM.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'bulletROM' (14#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletROM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bulletSprite' (15#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletSprite.v:26]
+INFO: [Synth 8-6157] synthesizing module 'MotherShipSprite' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/MotherShipSprite.v:2]
+	Parameter MSWidth bound to: 48 - type: integer 
+	Parameter MSHeight bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MotherShipVRom' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/MotherShipVRom.v:2]
+INFO: [Synth 8-3876] $readmem data file 'Boss.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/MotherShipVRom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MotherShipVRom' (16#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/MotherShipVRom.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MotherShipSprite' (17#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/MotherShipSprite.v:2]
+INFO: [Synth 8-6157] synthesizing module 'motherBulletSprite' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/motherBulletSprite.v:3]
+	Parameter BulletWidth bound to: 4 - type: integer 
+	Parameter BulletHeight bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bulletBossROM' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletBossROM.v:3]
+INFO: [Synth 8-3876] $readmem data file 'Bullet.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletBossROM.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bulletBossROM' (18#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/bulletBossROM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'motherBulletSprite' (19#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/motherBulletSprite.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GameOVSprite' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/GameOVSprite.v:2]
+	Parameter GOWidth bound to: 236 - type: integer 
+	Parameter GOHeight bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'GameOVVRom' [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/GameOVVRom.v:2]
+INFO: [Synth 8-3876] $readmem data file 'Gameover5.mem' is read successfully [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/GameOVVRom.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'GameOVVRom' (20#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/GameOVVRom.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'GameOVSprite' (21#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/GameOVSprite.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (22#1) [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1093.457 ; gain = 58.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1093.457 ; gain = 58.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1093.457 ; gain = 58.277
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1093.457 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.srcs/sources_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1197.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1197.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1197.137 ; gain = 161.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1197.137 ; gain = 161.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1197.137 ; gain = 161.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'mouse'
+INFO: [Synth 8-802] inferred FSM for state register 'Adir_reg' in module 'AlienSprites'
+INFO: [Synth 8-802] inferred FSM for state register 'Adir_reg' in module 'MotherShipSprite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                     dps |                              010 |                               01
+                    load |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                     rts |                              001 |                              001
+                   start |                              010 |                              010
+                    data |                              011 |                              011
+                    stop |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'ps2_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   init1 |                              000 |                              000
+                   init2 |                              001 |                              001
+                   init3 |                              010 |                              010
+                   pack1 |                              011 |                              011
+                   pack2 |                              100 |                              100
+                   pack3 |                              101 |                              101
+                    done |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'mouse'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               01
+*
+                  iSTATE |                                1 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Adir_reg' using encoding 'sequential' in module 'AlienSprites'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               01
+*
+                  iSTATE |                                1 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Adir_reg' using encoding 'sequential' in module 'MotherShipSprite'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1197.137 ; gain = 161.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 11    
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   4 Input   13 Bit       Adders := 3     
+	   3 Input   13 Bit       Adders := 3     
+	   3 Input   12 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 27    
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 24    
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 61    
+	                1 Bit    Registers := 18    
++---ROMs : 
+	                    ROMs := 8     
++---Muxes : 
+	   2 Input   25 Bit        Muxes := 1     
+	   5 Input   13 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 16    
+	   3 Input   10 Bit        Muxes := 1     
+	   5 Input    9 Bit        Muxes := 1     
+	   7 Input    9 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 12    
+	   5 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 892   
+	  11 Input    2 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 68    
+	   5 Input    1 Bit        Muxes := 10    
+	   7 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1197.137 ; gain = 161.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
+|Top         | p_0_out    | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1208.184 ; gain = 173.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1247.164 ; gain = 211.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance BeeDisplay/BeeVRom/o_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ADisplay/Alien1VRom/o_A1data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ADisplay/Alien2VRom/o_A2data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ADisplay/Alien3VRom/o_A3data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance BulletDisplay/bullet/o_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance BulletDisplay/bullet/o_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance MSDisplay/MSVRom/o_MSdata_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance GODisplay/GOVRom/o_GOdata_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1288.711 ; gain = 253.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.246 ; gain = 260.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.246 ; gain = 260.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.246 ; gain = 260.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.246 ; gain = 260.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.297 ; gain = 260.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.297 ; gain = 260.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   259|
+|3     |LUT1     |    81|
+|4     |LUT2     |   395|
+|5     |LUT3     |   195|
+|6     |LUT4     |   369|
+|7     |LUT5     |   370|
+|8     |LUT6     |   706|
+|9     |MUXF7    |     8|
+|10    |RAMB18E1 |     6|
+|16    |RAMB36E1 |     7|
+|23    |FDCE     |   131|
+|24    |FDPE     |     1|
+|25    |FDRE     |   375|
+|26    |FDSE     |    29|
+|27    |IBUF     |     3|
+|28    |IOBUF    |     2|
+|29    |OBUF     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.297 ; gain = 260.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 1295.297 ; gain = 156.438
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1295.297 ; gain = 260.117
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1307.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 282 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1307.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+97 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1307.320 ; gain = 272.141
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/verilog/SpaceInvader/SpaceInvader.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 19:40:21 2020...

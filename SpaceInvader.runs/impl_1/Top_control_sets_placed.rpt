@@ -1,0 +1,123 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Dec  7 19:41:09 2020
+| Host         : LAPTOP-CLS9L759 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    45 |
+|    Minimum number of control sets                        |    45 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   184 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    45 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |    13 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           28 |
+| No           | No                    | Yes                    |              69 |           20 |
+| No           | Yes                   | No                     |              36 |           14 |
+| Yes          | No                    | No                     |              76 |           35 |
+| Yes          | No                    | Yes                    |              63 |           24 |
+| Yes          | Yes                   | No                     |             252 |           93 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                  Enable Signal                 |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  PixCLK_BUFG   | ADisplay/o_resetnext_reg_1                     | ADisplay/GameOver                   |                1 |              1 |         1.00 |
+|  PixCLK_BUFG   | ADisplay/AcounterH[9]_i_2_n_0                  | ADisplay/AcounterH[9]_i_1_n_0       |                1 |              3 |         3.00 |
+|  CLK_IBUF_BUFG |                                                |                                     |                1 |              4 |         4.00 |
+|  PixCLK_BUFG   | ADisplay/Aycount2[3]_i_2_n_0                   | ADisplay/Aycount2[3]_i_1_n_0        |                1 |              4 |         4.00 |
+|  PixCLK_BUFG   | ADisplay/Aycount[3]_i_1_n_0                    |                                     |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG | mouse/mouse_unit/ps2_unit/ps2_rx_unit/n_next   | RESET_IBUF                          |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG | mouse/mouse_unit/ps2_unit/ps2_tx_unit/n_next   | RESET_IBUF                          |                2 |              4 |         2.00 |
+|  PixCLK_BUFG   | display/H_SCAN_reg[9]_1[0]                     |                                     |                2 |              4 |         2.00 |
+|  PixCLK_BUFG   | display/active                                 |                                     |                4 |              4 |         1.00 |
+|  PixCLK_BUFG   | bossBullet/bulletSpeed                         |                                     |                1 |              4 |         4.00 |
+|  PixCLK_BUFG   | ADisplay/AcounterH[9]_i_2_n_0                  |                                     |                2 |              5 |         2.50 |
+|  PixCLK_BUFG   | display/firing_reg_0[0]                        | display/firing_reg_1[0]             |                1 |              6 |         6.00 |
+|  PixCLK_BUFG   | display/firing_reg_2[0]                        | bossBullet/address[5]_i_1__1_n_0    |                1 |              6 |         6.00 |
+|  PixCLK_BUFG   | bossBullet/BulletY[8]_i_2__0_n_0               | bossBullet/BulletY[8]_i_1__0_n_0    |                3 |              7 |         2.33 |
+|  PixCLK_BUFG   | ADisplay/AoX[9]_i_1_n_0                        |                                     |                3 |              7 |         2.33 |
+|  CLK_IBUF_BUFG | mouse/mouse_unit/ps2_unit/ps2_rx_unit/E[0]     | RESET_IBUF                          |                5 |              8 |         1.60 |
+|  CLK_IBUF_BUFG | mouse/mouse_unit/ps2_unit/ps2_tx_unit/b_next_0 | RESET_IBUF                          |                1 |              8 |         8.00 |
+|  PixCLK_BUFG   | BulletDisplay/BulletY[6]_i_2_n_0               | display/p_reg_reg                   |                2 |              8 |         4.00 |
+|  PixCLK_BUFG   | bossBullet/accumulateSec                       | bossBullet/accumulateSec[8]_i_1_n_0 |                2 |              9 |         4.50 |
+|  PixCLK_BUFG   | bossBullet/delaysec[8]_i_2_n_0                 | ADisplay/SS[0]                      |                3 |              9 |         3.00 |
+|  PixCLK_BUFG   | mouse/mouse_unit/RESET                         |                                     |                5 |              9 |         1.80 |
+|  PixCLK_BUFG   | display/E[0]                                   | display/SR[0]                       |                2 |              9 |         4.50 |
+|  PixCLK_BUFG   | ADisplay/AoY[9]_i_1_n_0                        |                                     |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG | mouse/mouse_unit/ps2_unit/ps2_rx_unit/b_next   | RESET_IBUF                          |                5 |             10 |         2.00 |
+|  PixCLK_BUFG   | ADisplay/E[0]                                  | ADisplay/AcounterW[9]_i_1_n_0       |                4 |             10 |         2.50 |
+|  PixCLK_BUFG   | ADisplay/delaliens                             | ADisplay/delaliens[9]_i_1_n_0       |                3 |             10 |         3.33 |
+|  PixCLK_BUFG   | bossBullet/accumulateSec1                      |                                     |                4 |             10 |         2.50 |
+|  PixCLK_BUFG   | ADisplay/A1address[9]_i_2_n_0                  | ADisplay/A1address[9]_i_1_n_0       |                4 |             10 |         2.50 |
+|  PixCLK_BUFG   | ADisplay/A2address[9]_i_2_n_0                  | ADisplay/A2address[9]_i_1_n_0       |                4 |             10 |         2.50 |
+|  PixCLK_BUFG   | ADisplay/A3address[9]_i_2_n_0                  | ADisplay/A3address[9]_i_1_n_0       |                4 |             10 |         2.50 |
+|  PixCLK_BUFG   | mouse/E[0]                                     |                                     |                3 |             10 |         3.33 |
+|  CLK_IBUF_BUFG | display/V_SCAN[9]_i_1_n_0                      |                                     |                5 |             10 |         2.00 |
+|  PixCLK_BUFG   | display/V_SCAN_reg[1]_1[0]                     | ADisplay/SR[0]                      |                4 |             10 |         2.50 |
+|  PixCLK_BUFG   | display/V_SCAN_reg[8]_1[0]                     | ADisplay/p_0_in                     |                3 |             10 |         3.33 |
+|  CLK_IBUF_BUFG | PixCLK_BUFG                                    | display/H_SCAN                      |                6 |             10 |         1.67 |
+|  PixCLK_BUFG   | display/GameOver_reg[0]                        | display/GameOver_reg_0[0]           |                2 |             10 |         5.00 |
+|  PixCLK_BUFG   |                                                | display/H_SCAN_reg[8]_4[0]          |                7 |             12 |         1.71 |
+|  CLK_IBUF_BUFG | mouse/mouse_unit/ps2_unit/ps2_tx_unit/c_next_1 | RESET_IBUF                          |                6 |             13 |         2.17 |
+|  PixCLK_BUFG   | display/address                                | display/H_SCAN_reg[3]_1             |                4 |             15 |         3.75 |
+|  CLK_IBUF_BUFG | nolabel_line34/displayed_number[0]_i_1_n_0     | RESET_IBUF                          |                4 |             16 |         4.00 |
+|  PixCLK_BUFG   |                                                | bossBullet/accumulateSec            |                7 |             24 |         3.43 |
+|  PixCLK_BUFG   | ADisplay/A1Y                                   | ADisplay/p_0_in                     |               13 |             30 |         2.31 |
+|  PixCLK_BUFG   |                                                |                                     |               27 |             44 |         1.63 |
+|  PixCLK_BUFG   | display/active                                 | ADisplay/Acount1                    |               25 |             55 |         2.20 |
+|  CLK_IBUF_BUFG |                                                | RESET_IBUF                          |               20 |             69 |         3.45 |
++----------------+------------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+
